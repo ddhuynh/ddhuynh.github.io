@@ -1,0 +1,68 @@
+body {
+    background-color: #212529;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.mainContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.bannerContainer {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    border-bottom: orange solid;
+}
+
+.bannerContent {
+    display: flex;
+    height: 50px;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.bodyContainer {
+    display: flex;
+    height: fit-content;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.bodyContent {
+    display: flex;
+    width: 800px;
+    height: fit-content;
+    /* background-color: red; */
+    flex-direction: column;
+    word-break: break-word;
+}
+
+.footerContainer {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+
+.footerContent {
+    display: flex;
+    width: 800px;
+    height: 100px;
+    background-color: blue;
+}
+
+.postItem {
+    display: flex;
+    word-break: break-word;
+    background-color: red;
+    height: fit-content;
+    flex-direction: column;
+    border: solid;
+}
+
+img {
+    max-width: 100%;
+}
