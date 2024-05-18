@@ -1,10 +1,14 @@
-import React from 'react';
+// import React from 'react';
 import './App.css'
+
+import Body from './components/Body'
 
 function App() {
   return (
     <>
-      Hello World!
+      <div className='mainContainer'>
+        <Body/>
+      </div>
     </>
   )
 }
