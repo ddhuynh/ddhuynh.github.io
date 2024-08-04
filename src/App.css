@@ -5,7 +5,71 @@ body {
     margin: 0px;
 }
 
-.mainContainer {
+/* Container for the entire page */
+.pageContainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    word-break: break-word;
+}
+
+/* Use to set a page section */
+/* Is not flex-direction column */
+.sectionContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+/* Div container in banner section */
+.bannerContent {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    max-width: 1080px;
+    background-color: green;
+}
+
+/* Div container in about section */
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    height: auto;
+    width: 100%;
+    max-width: 1080px;
+    background-color: green;
+}
+
+/* Div container in body section */
+.bodyContent {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100px;
+    width: 100%;
+    max-width: 1080px;
+    background-color: peru;
+}
+
+/* Div container in footer section */
+.footerContent{
+    display: flex;
+    
+    min-height: 100px;
+    width: 100%;
+    max-width: 1080px;
+    background-color: red;
+}
+
+/* .pageContainer {
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -14,6 +78,7 @@ body {
 .bannerContainer {
     display: flex;
     height: fit-content;
+    width: 100%;
     justify-content: center;
     border-bottom: orange solid;
 }
@@ -22,12 +87,34 @@ body {
     display: flex;
     height: 50px;
     width: 800px;
+    margin: 2px;
     justify-content: space-between;
+}
+
+.aboutContainer {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: fit-content;
+    width: 800px;
+
 }
 
 .bodyContainer {
     display: flex;
     height: fit-content;
+    width: 100%;
     flex-grow: 1;
     justify-content: center;
 }
@@ -36,7 +123,6 @@ body {
     display: flex;
     width: 800px;
     height: fit-content;
-    /* background-color: red; */
     flex-direction: column;
     word-break: break-word;
 }
@@ -44,6 +130,7 @@ body {
 .footerContainer {
     display: flex;
     height: fit-content;
+    width: 100%;
     justify-content: center;
 }
 
@@ -60,9 +147,9 @@ body {
     background-color: red;
     height: fit-content;
     flex-direction: column;
-    border: solid;
+    border: green solid;
 }
 
 img {
     max-width: 100%;
-}
+} */
