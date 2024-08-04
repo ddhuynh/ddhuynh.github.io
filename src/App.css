@@ -1,42 +1,155 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    background-color: #212529;
+    color: white;
+    padding: 0px;
+    margin: 0px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Container for the entire page */
+.pageContainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    word-break: break-word;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Use to set a page section */
+/* Is not flex-direction column */
+.sectionContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Div container in banner section */
+.bannerContent {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    max-width: 1080px;
+    background-color: green;
 }
 
-.card {
-  padding: 2em;
+/* Div container in about section */
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    height: auto;
+    width: 100%;
+    max-width: 1080px;
+    background-color: green;
 }
 
-.read-the-docs {
-  color: #888;
+/* Div container in body section */
+.bodyContent {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100px;
+    width: 100%;
+    max-width: 1080px;
+    background-color: peru;
 }
+
+/* Div container in footer section */
+.footerContent{
+    display: flex;
+    
+    min-height: 100px;
+    width: 100%;
+    max-width: 1080px;
+    background-color: red;
+}
+
+/* .pageContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.bannerContainer {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    border-bottom: orange solid;
+}
+
+.bannerContent {
+    display: flex;
+    height: 50px;
+    width: 800px;
+    margin: 2px;
+    justify-content: space-between;
+}
+
+.aboutContainer {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: fit-content;
+    width: 800px;
+
+}
+
+.bodyContainer {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.bodyContent {
+    display: flex;
+    width: 800px;
+    height: fit-content;
+    flex-direction: column;
+    word-break: break-word;
+}
+
+.footerContainer {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+}
+
+.footerContent {
+    display: flex;
+    width: 800px;
+    height: 100px;
+    background-color: blue;
+}
+
+.postItem {
+    display: flex;
+    word-break: break-word;
+    background-color: red;
+    height: fit-content;
+    flex-direction: column;
+    border: green solid;
+}
+
+img {
+    max-width: 100%;
+} */
