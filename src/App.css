@@ -5,6 +5,12 @@ body {
     margin: 0px;
 }
 
+img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* Container for the entire page */
 .pageContainer {
     display: flex;
@@ -21,7 +27,6 @@ body {
     height: fit-content;
     display: flex;
     justify-content: center;
-    background-color: darkcyan;
 }
 
 /* Div container in banner section */
@@ -32,124 +37,43 @@ body {
     padding-right: 10px;
     width: 100%;
     max-width: 1080px;
-    background-color: green;
 }
 
 /* Div container in about section */
 .aboutContent {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
     text-align: center;
 
     height: auto;
     width: 100%;
     max-width: 1080px;
-    background-color: green;
 }
 
 /* Div container in body section */
 .bodyContent {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    min-height: 100px;
+    width: 100%;
+    max-width: 1080px;
+    /* background-color: peru; */
+}
 
+/* Div container in footer section */
+.footerContent {
+    display: flex;
+    
     min-height: 100px;
     width: 100%;
     max-width: 1080px;
     background-color: peru;
 }
 
-/* Div container in footer section */
-.footerContent{
-    display: flex;
-    
-    min-height: 100px;
-    width: 100%;
-    max-width: 1080px;
-    background-color: red;
-}
-
-/* .pageContainer {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-}
-
-.bannerContainer {
-    display: flex;
-    height: fit-content;
-    width: 100%;
-    justify-content: center;
-    border-bottom: orange solid;
-}
-
-.bannerContent {
-    display: flex;
-    height: 50px;
-    width: 800px;
-    margin: 2px;
-    justify-content: space-between;
-}
-
-.aboutContainer {
-    display: flex;
-    height: fit-content;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.postContent {
+    background-color: teal;
     text-align: center;
-
-    height: fit-content;
-    width: 800px;
-
+    border: 3px lightblue solid;
 }
-
-.bodyContainer {
-    display: flex;
-    height: fit-content;
-    width: 100%;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.bodyContent {
-    display: flex;
-    width: 800px;
-    height: fit-content;
-    flex-direction: column;
-    word-break: break-word;
-}
-
-.footerContainer {
-    display: flex;
-    height: fit-content;
-    width: 100%;
-    justify-content: center;
-}
-
-.footerContent {
-    display: flex;
-    width: 800px;
-    height: 100px;
-    background-color: blue;
-}
-
-.postItem {
-    display: flex;
-    word-break: break-word;
-    background-color: red;
-    height: fit-content;
-    flex-direction: column;
-    border: green solid;
-}
-
-img {
-    max-width: 100%;
-} */
