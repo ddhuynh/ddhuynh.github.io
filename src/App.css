@@ -31,6 +31,9 @@ a {
     height: fit-content;
     display: flex;
     justify-content: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Div container in banner section */
@@ -47,12 +50,11 @@ a {
 
 /* Div container in about section */
 .aboutContent {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
     text-align: center;
 
-    height: auto;
+    min-height: calc(100vh - 20px);
     width: 100%;
     max-width: 1080px;
 }
@@ -72,10 +74,14 @@ a {
 .footerContent {
     display: flex;
     
-    height: 100px;
     width: 100%;
     max-width: 1080px;
-    background-color: peru;
+    background-color: inherit;
+
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .footerContent>a {
@@ -83,9 +89,10 @@ a {
 }
 
 .postContent {
-    background-color: teal;
+    background-color: #006e95;
     text-align: center;
     border: 3px lightblue solid;
+    border-radius: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,59 +115,111 @@ Set max-height limit image size expanding container. */
 
 .carousel-control-prev {
     width: 10%;
+    height: 50%;
+    align-self: center;
 }
 
 .carousel-control-next {
     width: 10%;
+    height: 50%;
+    align-self: center;
 }
 
-
-
-/* insanity */
+/* Insane card flipping */
 .card {
     align-self: center;
     width: 80%;
     margin-bottom: 50px;
-    background-color: darkgreen;
+    background-color: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-
-    border-radius: .25rem;
+    border: none;
     
     transform-style: preserve-3d;
     transition: 500ms;
-    cursor: pointer;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
-  }
+}
   
-  .card:hover {
-    --translate-y: -2px;
-    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
-  }
+.front:hover {
+--translate-y: -2px;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
   
-  .card.flip {
-    --rotate-y: 180deg;
-  }
-  
-  .card .front,
-  .card .back {
-    /* position: absolute; */
-    /* padding: 1rem; */
-    backface-visibility: hidden;
-  }
-  
-  .card .back {
-    transform: rotateY(180deg);
+.card.flip {
+--rotate-y: 180deg;
+}
 
-    background-color: peru;
-    position: absolute;
-    height: 100%;
-    width: 80%;
-    overflow-y: auto;
-  }
+.card .front,
+.card .back {
+backface-visibility: hidden;
+}
+  
+.card .back {
+transform: rotateY(180deg);
 
-  .card .front {
-    background-color: peru;
-  }
+background-color: #00a1e0;
+position: absolute;
+height: 100%;
+width: 80%;
+overflow-y: auto;
+cursor: pointer;
+}
+ 
+.back:hover {
+--translate-y: -2px;
+box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
+.card .front {
+background-color: peru;
+cursor: pointer;
+}
+
+
+
+
+/* Fade in effect */
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeText {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.fadeTextHidden {
+    opacity: 0;
+}
+
+.profileImg {
+    border-radius: 50%;
+
+    width: 15vmax;
+    height: 15vmax;
+    max-width: 300px;
+    max-height: 300px;
+    align-self: center;
+
+    margin: 5vh;
+
+    object-fit: cover;
+}
+
+.iconLinksContainer {
+    display: flex;
+    padding: 10px;
+}
+
+.footerDescription {
+    width: 66%;
+    margin: 0;
+    text-align: center;
+}
