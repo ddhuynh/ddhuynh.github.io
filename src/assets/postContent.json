@@ -1,0 +1,31 @@
+[
+    {
+        "title" : "My Personal Portfolio",
+        "date" : "08/08/2024",
+        "description" : "Sometimes when you have nothing to do, you find something to do! I decided to create my own portfolio website using vite/reactjs/github pages to challenge my web development skills. Below is an image of an earlier look at the website.",
+        "link" : "https://github.com/DaviHynh/davihynh.github.io",
+        "image" : "/images/oldPortfolio.png",
+        "moreInfo" : "This stuff was a pain to make. Like seriously."
+    },
+    {
+        "title" : "Project One",
+        "date" : "08/08/2024",
+        "description" : "Short Description",
+        "link" : "",
+        "image" : "/images/TempImage.png"
+    },
+    {
+        "title" : "Project Two",
+        "date" : "08/08/2024",
+        "description" : "Short Description",
+        "link" : "",
+        "image" : "/images/TempImage.png"
+    },
+    {
+        "title" : "Project Three",
+        "date" : "08/08/2024",
+        "description" : "Short Descasdasdasdription",
+        "link" : "",
+        "image" : "/images/TempImage.png"
+    }
+]
