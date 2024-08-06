@@ -4,10 +4,8 @@ body {
     overflow: hidden;
 }
 
-img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
+a {
+    color: inherit;
 }
 
 /* Container for the entire page */
@@ -74,14 +72,95 @@ img {
 .footerContent {
     display: flex;
     
-    min-height: 100px;
+    height: 100px;
     width: 100%;
     max-width: 1080px;
     background-color: peru;
+}
+
+.footerContent>a {
+    color: white;
 }
 
 .postContent {
     background-color: teal;
     text-align: center;
     border: 3px lightblue solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+.postDescription {
+    width: 80%;
+    height: 72px;
+    align-self: center;
+    overflow-y: auto;
+}
+
+/* Width at 100% to fill to parent container.
+Set max-height limit image size expanding container. */
+.postImage {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.carousel-control-prev {
+    width: 10%;
+}
+
+.carousel-control-next {
+    width: 10%;
+}
+
+
+
+/* insanity */
+.card {
+    align-self: center;
+    width: 80%;
+    margin-bottom: 50px;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    border-radius: .25rem;
+    
+    transform-style: preserve-3d;
+    transition: 500ms;
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  }
+  
+  .card:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  }
+  
+  .card.flip {
+    --rotate-y: 180deg;
+  }
+  
+  .card .front,
+  .card .back {
+    /* position: absolute; */
+    /* padding: 1rem; */
+    backface-visibility: hidden;
+  }
+  
+  .card .back {
+    transform: rotateY(180deg);
+
+    background-color: peru;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    overflow-y: auto;
+  }
+
+  .card .front {
+    background-color: peru;
+  }
