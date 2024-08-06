@@ -16,11 +16,11 @@ function Content()
         <p className='postDescription'>{postItem.description}</p>
         {/* <img className='postImage' src={`${postItem.image}`}></img> */}
 
-        <div className={`card ${flip ? 'flip' : ''}`} onClick={() => setFlip(!flip)}>
-          <div className='front'>
+        <div className={`card ${flip ? 'flip' : ''}`}>
+          <div className='front' onClick={() => setFlip(!flip)}>
             <img className='postImage' src={`${postItem.image}`}></img>
           </div>
-          <div className='back'>
+          <div className='back' onClick={() => setFlip(!flip)}>
             <p>{postItem.moreInfo}</p>
           </div>
         </div>
