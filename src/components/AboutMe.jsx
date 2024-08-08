@@ -24,9 +24,16 @@ function AboutMe()
           </motion.div>
 
           <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            {`I initially started my career thinking it would revolve around biological science, 
+            but after a year in college, I discovered the world of coding
+            and realized that I actually enjoyed solving problems and developing real-world applications. As a result, 
+            I've worked on a variety of projects, ranging from concurrent programs, to full-stack web apps!
+            In the time I've spent developing these projects, I've learned to enjoy the challenge that comes with learning something new, 
+            and to embrace meeting and socializing with different people.
+            You can check out some of these projects down below!`}
           </p>
-          <p>Click on an image in the carousel to read more about the project!</p>
+          
+          <p>(Click on an image in the carousel to learn more about the project!)</p>
 
         </div>
       </div>
