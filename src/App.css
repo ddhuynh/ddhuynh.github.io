@@ -42,10 +42,10 @@ a {
     justify-content: space-between;
 
     margin-top: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
-    max-width: 1080px;
+    max-width: 1600px;
 }
 
 /* Div container in about section */
@@ -56,18 +56,18 @@ a {
 
     min-height: calc(100vh - 15px);
     width: 100%;
-    max-width: 1080px;
+    max-width: 1600px;
 }
 
 /* Div container in body section */
 .bodyContent {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     width: 100%;
-    max-width: 1080px;
-
-
+    max-width: 1600px;
+    
+    
+    gap: 50px;
     min-height: 100px;
 }
 
@@ -76,7 +76,7 @@ a {
     display: flex;
     
     width: 100%;
-    max-width: 1080px;
+    max-width: 1600px;
     background-color: inherit;
 
     justify-content: space-evenly;
@@ -89,65 +89,24 @@ a {
     color: white;
 }
 
-.postContent {
-    background-color: #006e95;
-    text-align: center;
-    border: 3px lightblue solid;
-    border-radius: 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    min-height: 75vh;
-}
-
-.postDescription {
-    width: 80%;
-    height: 72px;
-    align-self: center;
-    overflow-y: auto;
-}
-
-/* Width at 100% to fill to parent container.
-Set max-height limit image size expanding container. */
-.postImage {
-    width: 100%;
-    max-height: 300px;
-    object-fit: contain;
-}
-
-.carousel-control-prev {
-    width: 10%;
-    height: 50%;
-    align-self: center;
-}
-
-.carousel-control-next {
-    width: 10%;
-    height: 50%;
-    align-self: center;
-}
-
-
-.cardContainer {
-    align-self: center;
-    width: 80%;
-    margin-bottom: 50px;
-    background-color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-grow: 1;
-}
-
-/* Insane card flipping */
+/*
+This css handles the container size
+for the image. The front and back of the card
+have width/height to 100% to fill to the parent
+container, which is this.
+The image is the same, so it stretches to
+this parent container.
+*/
 .card {
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-
+    background-color: inherit;
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    color: white;
 
     transform-style: preserve-3d;
     transition: 500ms;
@@ -155,42 +114,46 @@ Set max-height limit image size expanding container. */
 }
   
 .front:hover {
---translate-y: -2px;
-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
 }
   
 .card.flip {
---rotate-y: 180deg;
+    --rotate-y: 180deg;
 }
 
 .card .front,
 .card .back,
 .card .enlargeImage {
-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
   
 .card .back {
-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 
-background-color: #00a1e0;
-position: absolute;
-height: 100%;
-width: 100%;
-overflow-y: auto;
-cursor: pointer;
-}
- 
-.back:hover {
---translate-y: -2px;
-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    /* background-color: #00a1e0; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    cursor: pointer;
+    text-align: center;
+
+    border-radius: 1rem;
+    }
+    
+    .back:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
 }
 
 .card .front {
-background-color: peru;
-cursor: pointer;
+    background-color: inherit;
+    cursor: pointer;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
 }
-
-
 
 
 /* Fade in effect */
@@ -237,7 +200,6 @@ cursor: pointer;
     text-align: center;
 }
 
-
 .customModalClass {
     min-width: 90%;
     width: 90%;
@@ -275,4 +237,62 @@ cursor: pointer;
 
 .enlargeImage:hover {
     opacity: 1;
+}
+
+
+/* This is the container that is inside of body */
+.contentContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    min-height: 400px;
+    gap: 1%;
+
+    padding-bottom: 50px;
+}
+
+.contentContainer:not(:last-child) {
+    border-bottom: solid peru;
+}
+
+.contentImageContainer {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentImage {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+
+    
+    height: 100%;
+}
+
+.contentInfoContainer {
+    width: 60%;
+    border-radius: 1rem;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contentDescription {
+    width: 80%;
+    align-self: center;
+}
+
+@media (max-width: 1000px) {
+    .contentContainer {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .contentImageContainer, .contentInfoContainer {
+        width: 100%;
+    }
 }
