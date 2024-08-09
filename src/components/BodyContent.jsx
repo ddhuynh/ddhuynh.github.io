@@ -4,7 +4,7 @@ function Body()
 {
   return (
     <>
-      <div className="sectionContainer" style={{flexGrow: "1"}}>
+      <div className="sectionContainer">
         <div className="bodyContent">
             <Content />
         </div>

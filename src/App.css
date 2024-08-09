@@ -31,6 +31,9 @@ a {
     height: fit-content;
     display: flex;
     justify-content: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Div container in banner section */
@@ -39,128 +42,257 @@ a {
     justify-content: space-between;
 
     margin-top: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
-    max-width: 1080px;
+    max-width: 1600px;
 }
 
 /* Div container in about section */
 .aboutContent {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center; */
     text-align: center;
 
-    height: auto;
+    min-height: calc(100vh - 15px);
     width: 100%;
-    max-width: 1080px;
+    max-width: 1600px;
 }
 
 /* Div container in body section */
 .bodyContent {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    min-height: 100px;
     width: 100%;
-    max-width: 1080px;
-    /* background-color: peru; */
+    max-width: 1600px;
+    
+    
+    gap: 50px;
+    min-height: 100px;
 }
 
 /* Div container in footer section */
 .footerContent {
     display: flex;
     
-    height: 100px;
     width: 100%;
-    max-width: 1080px;
-    background-color: peru;
+    max-width: 1600px;
+    background-color: inherit;
+
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .footerContent>a {
     color: white;
 }
 
-.postContent {
-    background-color: teal;
-    text-align: center;
-    border: 3px lightblue solid;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.postDescription {
-    width: 80%;
-    height: 72px;
-    align-self: center;
-    overflow-y: auto;
-}
-
-/* Width at 100% to fill to parent container.
-Set max-height limit image size expanding container. */
-.postImage {
-    width: 100%;
-    max-height: 300px;
-    object-fit: contain;
-}
-
-.carousel-control-prev {
-    width: 10%;
-}
-
-.carousel-control-next {
-    width: 10%;
-}
-
-
-
-/* insanity */
+/*
+This css handles the container size
+for the image. The front and back of the card
+have width/height to 100% to fill to the parent
+container, which is this.
+The image is the same, so it stretches to
+this parent container.
+*/
 .card {
-    align-self: center;
-    width: 80%;
-    margin-bottom: 50px;
-    background-color: darkgreen;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    border: none;
+    background-color: inherit;
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    color: white;
 
-    border-radius: .25rem;
-    
     transform-style: preserve-3d;
     transition: 500ms;
-    cursor: pointer;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
-  }
+}
   
-  .card:hover {
+.front:hover {
     --translate-y: -2px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
-  }
+}
   
-  .card.flip {
+.card.flip {
     --rotate-y: 180deg;
-  }
-  
-  .card .front,
-  .card .back {
-    /* position: absolute; */
-    /* padding: 1rem; */
+}
+
+.card .front,
+.card .back,
+.card .enlargeImage {
     backface-visibility: hidden;
-  }
+}
   
-  .card .back {
+.card .back {
     transform: rotateY(180deg);
 
-    background-color: peru;
+    /* background-color: #00a1e0; */
     position: absolute;
     height: 100%;
-    width: 80%;
+    width: 100%;
     overflow-y: auto;
-  }
+    cursor: pointer;
+    text-align: center;
 
-  .card .front {
-    background-color: peru;
-  }
+    border-radius: 1rem;
+    }
+    
+    .back:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
+.card .front {
+    background-color: inherit;
+    cursor: pointer;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Fade in effect */
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeText {
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.fadeTextHidden {
+    opacity: 0;
+}
+
+.profileImg {
+    border-radius: 50%;
+
+    width: 15vmax;
+    height: 15vmax;
+    max-width: 300px;
+    max-height: 300px;
+    align-self: center;
+
+    margin: 3vh;
+
+    object-fit: cover;
+}
+
+.iconLinksContainer {
+    display: flex;
+    padding: 10px;
+}
+
+.footerDescription {
+    width: 66%;
+    margin: 0;
+    text-align: center;
+}
+
+.customModalClass {
+    min-width: 90%;
+    width: 90%;
+    height: auto;
+}
+
+.modalImage {
+    object-fit: contain;
+    width: 100%;
+}
+
+.modal-content {
+    background-color: transparent;
+}
+
+.enlargeImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 5px;
+
+    width: 100%;
+    max-width: 40px;
+
+    height: 100%;
+    max-height: 40px;
+
+    opacity: .7;
+}
+
+.enlargeImage:hover {
+    opacity: 1;
+}
+
+
+/* This is the container that is inside of body */
+.contentContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    min-height: 400px;
+    gap: 1%;
+
+    padding-bottom: 50px;
+}
+
+.contentContainer:not(:last-child) {
+    border-bottom: solid peru;
+}
+
+.contentImageContainer {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentImage {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+
+    
+    height: 100%;
+}
+
+.contentInfoContainer {
+    width: 60%;
+    border-radius: 1rem;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contentDescription {
+    width: 80%;
+    align-self: center;
+}
+
+@media (max-width: 1000px) {
+    .contentContainer {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .contentImageContainer, .contentInfoContainer {
+        width: 100%;
+    }
+}

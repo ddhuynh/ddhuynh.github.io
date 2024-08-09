@@ -3,18 +3,15 @@ import BodyContent from "../components/BodyContent";
 import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe";
 
-function HomePage()
+export default function AboutPage()
 {
   return (
     <>
       <div className="pageContainer">
         <Banner />
-        <AboutMe />
-        <BodyContent />
+        
         <Footer />
       </div>
     </>
   )
 }
-
-export default HomePage;
