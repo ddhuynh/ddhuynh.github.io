@@ -11,7 +11,11 @@ function Banner()
           </Link>
         </p>
         <p>
-          <Link to="/about">About</Link>
+          {/* If I ever get around to making an about page... */}
+          {/* <Link to="/about">About</Link> */}
+          <a href="https://github.com/DaviHynh" target="_blank" rel="noopener noreferrer">
+          GitHub
+          </a>
         </p>
       </div>
     </div>

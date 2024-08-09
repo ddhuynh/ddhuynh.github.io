@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 function Footer()
 {
   return (
-    <div className="sectionContainer" style={{marginTop: "16vh", backgroundColor: "#1b1f22"}}>
+    <div className="sectionContainer" style={{backgroundColor: "#1b1f22"}}>
       <div className="footerContent">
         <div className="iconLinksContainer">
         <FaLinkedin size={30}/>

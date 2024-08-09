@@ -23,18 +23,16 @@ function AboutMe()
             <img src={profileImage} className="profileImg" />
           </motion.div>
 
-          <p>
+          <p style={{width: "80%", alignSelf: "center"}}>
             {`I initially started my career thinking it would revolve around biological science, 
-            but after a year in college, I discovered the world of coding
-            and realized that I actually enjoyed solving problems and developing real-world applications. As a result, 
-            I've worked on a variety of projects, ranging from concurrent programs, to full-stack web apps!
-            In the time I've spent developing these projects, I've learned to enjoy the challenge that comes with learning something new, 
-            and to embrace meeting and socializing with different people.
-            You can check out some of these projects down below!`}
+            but after a year in college, I discovered the world of coding and realized that 
+            I actually enjoyed solving problems and developing real-world applications.
+            As a result, I've worked on a variety of projects, ranging from concurrent programs to full-stack web apps!`}
           </p>
-          
-          <p>(Click on an image in the carousel to learn more about the project!)</p>
-
+          <p style={{width: "80%", alignSelf: "center"}}>
+            {`In the time I've spent developing these projects, I've learned to enjoy the challenge that comes with learning something new, 
+            and to embrace meeting and socializing with different people. You can check out some of these projects down below!`}
+          </p>
         </div>
       </div>
   )
