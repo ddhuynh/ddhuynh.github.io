@@ -1,61 +1,40 @@
-import Button from 'react-bootstrap/Button';
-import Carousel from 'react-bootstrap/Carousel';
 import Modal from 'react-bootstrap/Modal';
-import { ImEnlarge2 } from "react-icons/im";
 import { useState } from 'react';
 
+import CardFlip from './CardFlip';
 import content from "../assets/postContent.json"
 
 function Content()
 {
-  const [flip, setFlip] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [path, setPath] = useState("");
 
-
   const displayContent = content.map((postItem, index) => (
-    <Carousel.Item key={index}>
-      <div className="postContent">
-        <h2><a href={postItem.link} target="_blank" rel="noopener noreferrer">{postItem.title}</a></h2>
-        <h5>{postItem.date}</h5>
-        <p className='postDescription'>{postItem.description}</p>
-        {/* <img className='postImage' src={`${postItem.image}`}></img> */}
-
-
-        <div className='cardContainer'>
-            <div className={`card ${flip ? 'flip' : ''}`}>
-              <div className='front' onClick={() => {setFlip(!flip)}}>
-                <img className='postImage' src={`${postItem.image}`}></img>
-
-
-
-              </div>
-              <div className='back' onClick={() => {setFlip(!flip)}}>
-                <p>{postItem.moreInfo}</p>
-              </div>
-                <Button variant="info" className='enlargeImage' onClick={() => {setShowModal(true); setPath(`${postItem.image}`)}}>
-                <ImEnlarge2 />
-                </Button>
-            </div>
+      <div className='contentContainer' key={index}>
+        <div className='contentImageContainer'>
+          {/* This is a component that creates a flippable card. It uses postItem.image. */}
+          <CardFlip postItemProp={postItem} setShowModalProp={setShowModal} setPathProp={setPath} />
         </div>
+
+        {/* This is a container that holds the title/date/description. */}
+        <div className='contentInfoContainer'>
+          {/* If the link is "#", it won't go anywhere. */}
+          <h2><a href={postItem.link} target={postItem.link == "#" ? "_self" : "_blank"} rel="noopener noreferrer">{postItem.title}</a></h2>
+          <h4>{postItem.date}</h4>
+          <p className='contentDescription' style={{whiteSpace: "pre-line"}}>{postItem.description}</p>
         </div>
-    </Carousel.Item>
+      </div>
   ));
-
-
 
   return (
     <>
-      <Carousel data-bs-theme='dark' interval={null} onSelect={() => setFlip(false)}>
-        {displayContent}
-      </Carousel>
+      {displayContent}
 
       <Modal show={showModal} onHide={() => setShowModal(false)} dialogClassName='customModalClass' centered>
         <Modal.Body onClick={() => setShowModal(false)} style={{padding: "0px"}}>
           <img className='modalImage' src={path}></img>
         </Modal.Body>
       </Modal>
-
     </>
   )
 }
