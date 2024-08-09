@@ -1,38 +1,42 @@
 [
     {
-        "title" : "SF App",
-        "date" : "08/08/2024",
-        "description" : "Short Description",
-        "link" : "",
-        "image" : "/images/salesforce.png"
-    },
-    {
-        "title" : "Scubalogger",
-        "date" : "08/08/2024",
-        "description" : "Short Description",
-        "link" : "",
-        "image" : "/images/TempImage.png"
+        "title" : "Salesforce App Developer",
+        "date" : "06/24/2024",
+        "description" : "One of the biggest projects that I worked on involved using Salesforce to build a real-world application. In this project, my team and I worked on creating various appeal forms, as well as some custom Salesforce apps to view/approve/deny these forms.\n\n The biggest challenge of this project was the massive learning curve that came with Salesforce, but thankfully Salesforce Trailhead exists!\n\n There were also so many things to set up, from profiles to flows, but I learned a lot about Salesforce and teamwork from working on this project.",
+        "link" : "#",
+        "image" : "/images/badges.png", 
+        "moreInfo" : "My role in this project ranged from setting up the database/objects, to creating forms using flows. I also created and designed the custom apps so that a group of users could see the pending forms.\n\n The thing I struggled the most with was understanding how to generate links to the apps.\n\n This is because the links to target certain apps are different than the URL link, so I had to figure out the syntax of the url string before I could generate one.\n\n The image you see here is of my badges in Trailhead, since I don't think I'm allowed to show the forms/apps we created (they look good though!)."
     },
     {
         "title" : "My Personal Portfolio",
-        "date" : "08/08/2024",
-        "description" : "Sometimes when you have nothing to do, you find something to do! I decided to create my own portfolio website using vite/reactjs/github pages to challenge my web development skills. Below is an image of an earlier look at the website.",
+        "date" : "08/09/2024",
+        "description" : "Sometimes when you have nothing to do, you find something to do! I decided to create my own portfolio website using vite/reactjs/github pages to challenge my web development skills. The image you see is an earlier look at the website.\n\n I've gone through so many different iterations of the site and made a lot of changes to the css file, it's crazy. However, I've gained a deeper understanding of frontend work, and I think this helped polish my skills.",
         "link" : "https://github.com/DaviHynh/davihynh.github.io",
         "image" : "/images/oldPortfolio.png",
-        "moreInfo" : "This card flipping stuff was a pain to make. Like seriously."
+        "moreInfo" : "This card flipping stuff was a pain to make. Like seriously. You ever hear of that guy on youtube that teaches about web development? Yeah he's pretty cool.\n\n This site took less than 1 week to complete. If I spent more time on it, would it be better?"
     },
     {
-        "title" : "Parallel Programming Research Paper",
-        "date" : "08/08/2024",
-        "description" : "Short Descasdasdasdription",
-        "link" : "",
-        "image" : "/images/TempImage.png"
+        "title" : "Scuba Logger - A MERN Stack",
+        "date" : "07/30/2023",
+        "description" : "Have you ever gone deep sea diving before? Well, I certainly haven't. Anyways, this is a really cool MERN stack that I developed with a team of 7 people! Amazing!\n\n It includes some CRUD operations, along with some really cool data visualization. Did I also mention that it comes along with an app that lets you log data on the fly???\n\n In all seriousness, this was a great project to work on. I learned a lot about the different parts of a tech stack, such as setting up a database, creating APIs to interact with the database, and using frontend api calls to display the info.",
+        "link" : "https://github.com/Large-Project-COP4331/main",
+        "image" : "/images/scuba.png",
+        "moreInfo" : "It's not functional anymore, but when it was, it was really cool. Trust me.\n\n To me, the most challenging part of this project was figuring out how to test the APIs and set up things like emailing/registration.\n\n Creating/developing the mobile app was also another challenging aspect, since our team decided to use dart/flutter. However, once we got it setup, development for the mobile app went smoothly.\n\n I also struggled for a week with cookie management/using JSON web tokens before I figured out how to set it up."
     },
     {
-        "title" : "IDK",
-        "date" : "08/08/2024",
-        "description" : "Short Descasdasdasdription",
-        "link" : "",
-        "image" : "/images/TempImage.png"
+        "title" : "Parallel Processing Research Paper",
+        "date" : "05/24/2024",
+        "description" : "For a project in my parallel/distributed processing class, I participated in a research study, which revolved around a participant's understanding of multithreading. After partaking in the study, my team wrote a paper about the usage of concurrency in video game development.\n\n It might not be as influential or astounding as some of the other projects/papers out there, but I'm still proud of it. I learned a lot about concurrency in C++ from the class, as well as how to communicate and work together with a team.",
+        "link" : "https://github.com/COP4520-Spring-2024-Group-5/Parallel-Case-Studies",
+        "image" : "/images/paper.png",
+        "moreInfo" : "In this class, we were tasked with creating various programs to solve concurrency-related problems. You can check out some of those on my github.\n\n The image you see is a snippet of the full paper. If you're interested, check it out."
+    },
+    {
+        "title" : "A Parser for PL0???",
+        "date" : "06/25/2023",
+        "description" : "Why is this on here? Let me tell you a story. Once upon a time, I took a course that involved building a parser for a programming language, pl0. I still consider it one of the hardest classes I've ever taken.\n\n The main difficulty wasn't due to things like needing to code in C, or because I had to work on the parser by myself. It was mostly because I had to interpret the professor's code, which was an absolute amalgamation of too many files, too many places.\n\n To complete the project, I had to grasp the concept of using abstract syntax trees, which heavily relies on recursion. On top of that, you mix in the pointer madness of C, and you get SEGFAULT\n\n",
+        "link" : "#",
+        "image" : "/images/parser.png",
+        "moreInfo" : "Even though this class was difficult, I still consider it a great class. It pushed me to my limits in comprehending/interpreting the code of others, as well as deepening my understanding of recursion/parsers/tokenizers.\n\n We also were required to use makefiles, so that was a bit of a learning curve.\n\n I also finished the parser without any AI help, for better or worse.\n\n The file you see here is almost 600 lines long, and it's one file out of many."
     }
 ]
