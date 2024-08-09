@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-import Body from "../components/Body";
+import BodyContent from "../components/BodyContent";
 import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe";
 
@@ -10,7 +10,7 @@ function HomePage()
       <div className="pageContainer">
         <Banner />
         <AboutMe />
-        <Body />
+        <BodyContent />
         <Footer />
       </div>
     </>

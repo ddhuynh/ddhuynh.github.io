@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-import Body from "../components/Body";
+import Body from "../components/BodyContent";
 import Footer from "../components/Footer";
 import AboutMe from "../components/AboutMe";
 
