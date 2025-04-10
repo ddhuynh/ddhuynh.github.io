@@ -7,3 +7,5 @@ A few notes:
 - https://github.com/nvm-sh/nvm - Run the curl to install/update nvm.
 - nvm install node - To install the latest node. (node alias default node -- To use latest node version. RESTART THE TERMINAL AFTER RUNNING THIS.) 
 - nvm install-latest-npm - To install the latest npm.
+
+2. Run ``` npm i ``` to install the packages, then run ``` npm run dev ``` to start the local testing stuff.
