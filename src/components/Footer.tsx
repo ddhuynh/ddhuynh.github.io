@@ -8,8 +8,10 @@ function Footer()
     <div className="sectionContainer" style={{backgroundColor: "#1b1f22"}}>
       <div className="footerContent">
         <div className="iconLinksContainer">
-        <FaLinkedin size={30}/>
-        <a href="https://github.com/DaviHynh" target="_blank" rel="noopener noreferrer">
+        <a href="https://linkedin.com/in/ddhuynh" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin size={30}/>
+        </a>
+        <a href="https://github.com/ddhuynh" target="_blank" rel="noopener noreferrer">
           <FaGithubSquare size={30}/>
         </a>
         </div>
