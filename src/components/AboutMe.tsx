@@ -1,3 +1,5 @@
+// This file is for showing the brief profile description + picture.
+// Mostly just html/css + framer motion. Not a lot of js mechanics i think.
 import FadeText from "../hooks/FadeText";
 import { motion } from "framer-motion";
 
