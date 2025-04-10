@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
-import HomePage from './pages/HomePage'
-import AboutPage from './pages/AboutPage';
+import HomePage from './pages/HomePage.tsx'
+import AboutPage from './pages/AboutPage.tsx';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
