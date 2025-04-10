@@ -13,7 +13,7 @@ function Banner()
         <p>
           {/* If I ever get around to making an about page... */}
           {/* <Link to="/about">About</Link> */}
-          <a href="https://github.com/DaviHynh" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ddhuynh" target="_blank" rel="noopener noreferrer">
           GitHub
           </a>
         </p>
