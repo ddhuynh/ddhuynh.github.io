@@ -2,6 +2,8 @@
 
 This repository holds the source files for my static portfolio site.
 
-It makes use of a few different things, such as github pages, react, and vite.
-
-Thanks for visiting!
+A few notes:
+1. Make sure your nvm, npm, and node versions are updated:
+- https://github.com/nvm-sh/nvm - Run the curl to install/update nvm.
+- nvm install node - To install the latest node. (node alias default node -- To use latest node version. RESTART THE TERMINAL AFTER RUNNING THIS.) 
+- nvm install-latest-npm - To install the latest npm.
