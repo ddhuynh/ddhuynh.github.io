@@ -10,7 +10,7 @@
     {
         "title" : "My Personal Portfolio",
         "date" : "August 2024 - Present",
-        "description" : "Sometimes when you have nothing to do, you find something to do! I decided to create my own portfolio website using vite/reactjs/github pages to challenge my web development skills. The image you see is an earlier look at the website.\n\n I've gone through so many different iterations of the site and made a lot of changes to the css file, it's crazy. However, I've gained a deeper understanding of frontend work, and I think this helped polish my skills.",
+        "description" : "Sometimes when you need a portfolio, you build a portfolio! I decided to create my own portfolio website using vite/reactjs/github pages to challenge my web development skills. The image you see is an earlier look at the website.\n\n I've gone through so many different iterations of the site and made a lot of changes to the css file, it's crazy. However, I've gained a deeper understanding of frontend work, and I think this helped polish my skills.",
         "link" : "https://github.com/DaviHynh/davihynh.github.io",
         "image" : "/images/oldPortfolio.png",
         "moreInfo" : "This card flipping stuff was a pain to make. Like seriously. You ever hear of that guy on youtube that teaches about web development? Yeah he's pretty cool.\n\n This site took less than 1 week to complete. If I spent more time on it, would it be better?"
