@@ -1,3 +1,5 @@
+// Mostly html+css for the footer section. Don't forget to change links if you change something...
+
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 function Footer()
