@@ -1,9 +1,15 @@
+// This file is a component which takes a string + delay, and forces that string to appear with a given delay.
 import { useState, useEffect } from "react";
-import PropTypes from 'prop-types';
 
-export default function FadeText({text, delay})
+interface IProp
 {
-  const [visible, setVisible] = useState(false);
+  text: string;
+  delay: number;
+}
+
+export default function FadeText({text, delay}: IProp)
+{
+  const [visible, setVisible] = useState<boolean>(false);
 
   useEffect(() => {
 
@@ -19,9 +25,4 @@ export default function FadeText({text, delay})
       {text}
     </span>
   )
-}
-
-FadeText.propTypes = {
-  text: PropTypes.string,
-  delay: PropTypes.number
 }
