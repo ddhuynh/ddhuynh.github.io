@@ -7,11 +7,11 @@ export default function AboutPage()
 {
   return (
     <>
-      <div className="pageContainer">
+      {/* <div className="pageContainer">
         <Banner />
         
         <Footer />
-      </div>
+      </div> */}
     </>
   )
 }
